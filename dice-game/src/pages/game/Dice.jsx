@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import dice from '../data'
+import dice from "../../data";
 
-
-const GameButton = () => {
+const Dice = () => {
   const [diceImages, setDiceImages] = useState({
     dice1: dice[0],
     dice2: dice[1],
@@ -16,7 +15,7 @@ const GameButton = () => {
     let randomDice1 = getRandomImg();
     let randomDice2 = getRandomImg();
 
-   while (randomDice2 === randomDice1) {
+    while (randomDice2 === randomDice1) {
       randomDice2 = getRandomImg();
     }
 
@@ -32,8 +31,9 @@ const GameButton = () => {
       <button type="button" onClick={rollDice}>
         Roll Dice
       </button>
+      <button type="button" onClick={k}></button>
     </>
   );
 };
 
-export default GameButton;
+export default Dice;
