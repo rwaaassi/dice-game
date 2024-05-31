@@ -1,8 +1,9 @@
 const dice = [
-  "images/dice-1.png",
-  "images/dice-2.png",
-  "images/dice-3.png",
-  "images/dice-4.png",
-  "images/dice-5.png",
-  "images/dice-6.png",
+  "/assets/images/dice-1.png",
+  "/assets/images/dice-2.png",
+  "/assets/images/dice-3.png",
+  "/assets/images/dice-4.png",
+  "/assets/images/dice-5.png",
+  "/assets/images/dice-6.png",
 ];
+export default dice;

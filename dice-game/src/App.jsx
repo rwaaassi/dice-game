@@ -1,26 +1,29 @@
 import { useState } from "react";
-import Background from "./components/Background";
-import PageOne from "./pages/Instructions";
-import PageTwo from "./pages/game/Game";
+import Background from "./Background";
+import Instructions from "./pages/landing/Instructions";
+import Game from "./pages/game/Game";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("pageOne");
+  const [currentPage, setCurrentPage] = useState("instructions");
 
-  const handlePageOneClick = () => {
-    setCurrentPage("pageOne");
+  const handleStartGameClick = () => {
+    setCurrentPage("game");
   };
-  const handlePageTwoClick = () => {
-    setCurrentPage("pageTwo");
+
+  const handleNewGameClick = () => {
+    setCurrentPage("instructions");
   };
+
   return (
     <>
-      <Background />
-      <div>
-        <button onClick={handlePageOneClick}>Start Game</button>
-        <button onClick={handlePageTwoClick}>New Game</button>
-        {currentPage === "pageOne" && <PageOne />}
-        {currentPage === "pageTwo" && <PageTwo />}
-      </div>
+      <Background>
+        <div>
+          <button onClick={handleStartGameClick}>Start Game</button>
+          <button onClick={handleNewGameClick}>New Game</button>
+        </div>
+        {currentPage === "instructions" && <Instructions />}
+        {currentPage === "game" && <Game />}
+      </Background>
     </>
   );
 };

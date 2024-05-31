@@ -19,5 +19,5 @@ const Instructions = () => {
       </ul>
     </section>
   );
-}
-export default Instructions
+};
+export default Instructions;
