@@ -16,11 +16,11 @@ const App = () => {
 
   return (
     <>
+      <div className="game-btns">
+        <button onClick={handleStartGameClick}>Start Game</button>
+        <button onClick={handleNewGameClick}>New Game</button>
+      </div>
       <Background>
-        <div>
-          <button onClick={handleStartGameClick}>Start Game</button>
-          <button onClick={handleNewGameClick}>New Game</button>
-        </div>
         {currentPage === "instructions" && <Instructions />}
         {currentPage === "game" && <Game />}
       </Background>

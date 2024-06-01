@@ -54,7 +54,7 @@ const Game = () => {
       />
       <div>
         <Dice onRoll={rollDice} diceImages={diceImages} />
-        <button type="button" onClick={holdScore}>
+        <button type="button" onClick={holdScore} className="hold-btn">
           Hold
         </button>
       </div>
