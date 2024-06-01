@@ -6,11 +6,9 @@ This project aims at creating a simple dice game.
 
 # Game Instructions
 
-- In your turn - roll the dice once and accumulate the result in
-  "current".
-- Each player gets to roll the dice once, and whoever reaches the target score first wins.
-- Note! If you get 6-6 10 points will be added to your "current".
-- If you managed to reach exactly the target score - you win! If you passed it - you lose...
+- In your turn - roll the dice and accumulate the result in "current".
+ - Each player gets to roll the dice as many times as they want.
+- Whoever reaches exactly 100 in the overall score wins.
 
 # Languages Used
 - HTML
